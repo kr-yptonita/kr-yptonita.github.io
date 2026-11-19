@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karla Romina Juárez Torres (@kr-yptonita) — Portafolio Editorial</title>
+  <meta
+    name="description"
+    content="Portafolio editorial de Karla Romina Juárez Torres (@kr-yptonita): investigación epidemiológica y multisensorial, Python, Java, Rust, IA y sistemas reproducibles."
+  />
+  <meta property="og:title" content="Karla Romina Juárez Torres (@kr-yptonita)" />
+  <meta
+    property="og:description"
+    content="Modelado matemático, percepción multisensorial y software científico en Python, Java y Rust."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/Fondo.png" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/editorial.css" />
+</head>
+<body>
+  <div class="page-backdrop" aria-hidden="true"></div>
+  <header class="masthead">
+    <div class="container masthead__inner">
+      <a class="masthead__brand" href="#top">
+        <span class="masthead__mark">kr<span>.</span></span>
+        <span class="masthead__edition" id="edition-tag">ED. 2026 // @KR-YPTONITA</span>
+      </a>
+
+      <nav class="masthead__nav" aria-label="Principal">
+        <a href="#top" data-nav-key="about">Presentación</a>
+        <a href="#trajectory" data-nav-key="experience">Trayectoria</a>
+        <a href="#featured" data-nav-key="featured">Destacados</a>
+        <a href="#archive" data-nav-key="archive">Archivo</a>
+        <a href="#contact" data-nav-key="contact">Contacto</a>
+      </nav>
+
+      <div class="masthead__controls">
+        <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+          <button type="button" data-set-lang="es" aria-pressed="true">ES</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero-stage">
+      <div class="hero-stage__bg" aria-hidden="true"></div>
+      <section class="hero container" id="hero-root" aria-label="Presentación personal"></section>
+    </div>
+
+    <section class="trajectory container" id="trajectory" aria-labelledby="trajectory-header">
+      <div class="section-header" id="trajectory-header"></div>
+      <div id="trajectory-root"></div>
+    </section>
+
+    <section class="featured container" id="featured" aria-labelledby="featured-header">
+      <div class="section-header" id="featured-header"></div>
+      <div class="spreads" id="featured-root"></div>
+    </section>
+
+    <section class="archive container" id="archive" aria-labelledby="archive-header">
+      <div class="section-header" id="archive-header"></div>
+
+      <div class="archive__toolbar">
+        <div class="filter-tabs" id="filter-tabs" role="group" aria-label="Categorías"></div>
+        <div class="archive__controls-right">
+          <select class="archive__select" id="lang-filter" aria-label="Filtrar por lenguaje"></select>
+          <input
+            type="search"
+            class="archive__search"
+            id="archive-search"
+            placeholder="Buscar…"
+            aria-label="Buscar proyectos"
+          />
+        </div>
+      </div>
+
+      <div class="archive__meta-bar">
+        <span id="archive-count"></span>
+      </div>
+
+      <div class="archive__grid" id="archive-grid"></div>
+    </section>
+  </main>
+
+  <footer class="colophon-footer" id="contact">
+    <div class="container" id="footer-root"></div>
+  </footer>
+
+  <div
+    class="drawer-backdrop"
+    id="drawer-backdrop"
+    aria-hidden="true"
+  >
+    <aside
+      class="drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="drawer-heading"
+    >
+      <div class="drawer__topbar">
+        <span class="mono" style="font-size:0.72rem;color:var(--ink-muted);">@kr-yptonita // CASE SHEET</span>
+        <button type="button" class="drawer__close" id="drawer-close">Cerrar ficha [ESC]</button>
+      </div>
+      <div id="drawer-content"></div>
+    </aside>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

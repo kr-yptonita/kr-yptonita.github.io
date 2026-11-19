@@ -1,0 +1,630 @@
+[
+  {
+    "id": "mpms-musical-gusto",
+    "folio": "01",
+    "featured": true,
+    "layoutVariant": "spread-text-left",
+    "visibility": "private",
+    "category": "ai-signal",
+    "languages": ["Python", "JavaScript", "PyTorch", "FastAPI"],
+    "year": "2026",
+    "githubUrl": null,
+    "image": "assets/img/mpms-fourier.webp",
+    "imageOrientation": "portrait",
+    "plateId": null,
+    "es": {
+      "title": "MPMS — Música y Gusto",
+      "kicker": "Neurociencia Multisensorial · Ficha Técnica",
+      "tagline": "Modelo de Percepción MultiSensorial que vincula parámetros acústicos con los seis sabores elementales mediante psicofísica, aprendizaje profundo y Series de Fourier.",
+      "caption": "FIG. 01 — Ajuste temporal mediante Series de Fourier (5 armónicos) sobre curvas de intensidad gustativa (Dulce, Salado, Amargo, Ácido).",
+      "overview": "Proyecto de investigación y desarrollo multidisciplinario enfocado en psicofísica, neurociencia multisensorial y correspondencias crossmodales entre estímulos auditivos musicales y las percepciones del gusto humano (Dulce, Salado, Amargo, Ácido, Umami y Graso).",
+      "architecture": "Pipeline modular de 4 etapas: (1) segmentación rítmica por detección de BPM y compases; (2) extracción de ~96 descriptores espectrales, armónicos y tímbricos con librosa hacia SQLite/PostgreSQL; (3) plataforma fullstack FastAPI + React 19/Vite para validación humana en hexágono sensorial; (4) red perceptora MLP en PyTorch (ROCm/CUDA/CPU) y red generadora DSP Teacher-Student para modular Pitch, Tempo y ecualización.",
+      "highlights": [
+        "Extracción de ~96 características acústicas por compás con librosa.",
+        "Arquitectura Teacher-Student DSP y ajuste de curvas temporales con Series de Fourier.",
+        "Interfaz experimental interactiva en React 19, Vite, Recharts y WaveSurfer.js sobre API FastAPI."
+      ],
+      "stack": ["Python", "PyTorch (ROCm/CUDA)", "librosa", "FastAPI", "React 19", "WaveSurfer.js", "Series de Fourier"]
+    },
+    "en": {
+      "title": "MPMS — Music & Taste",
+      "kicker": "Multisensory Neuroscience · Technical Sheet",
+      "tagline": "Multisensory Perception Model linking acoustic and musical parameters to the six basic tastes through psychophysics, deep learning, and Fourier series.",
+      "caption": "FIG. 01 — Temporal approximation via Fourier Series (5 harmonics) over taste intensity curves (Sweet, Salty, Bitter, Sour).",
+      "overview": "Multidisciplinary R&D project focused on psychophysics, multisensory neuroscience, and crossmodal correspondences between musical audio stimuli and human taste perceptions (Sweet, Salty, Bitter, Sour, Umami, and Fatty).",
+      "architecture": "Modular 4-stage pipeline: (1) rhythmic segmentation via BPM and bar detection; (2) extraction of ~96 spectral, harmonic, and timbral descriptors with librosa into SQLite/PostgreSQL; (3) FastAPI + React 19/Vite platform for human validation on a sensory hexagon; (4) PyTorch MLP perceptual network and Teacher-Student DSP generator modulating Pitch, Tempo, and EQ.",
+      "highlights": [
+        "~96 acoustic features extracted per musical measure via librosa.",
+        "Teacher-Student DSP pipeline and temporal taste-curve modeling with Fourier series.",
+        "Interactive experimental platform built with React 19, Vite, Recharts, WaveSurfer.js, and FastAPI."
+      ],
+      "stack": ["Python", "PyTorch (ROCm/CUDA)", "librosa", "FastAPI", "React 19", "WaveSurfer.js", "Fourier Series"]
+    }
+  },
+  {
+    "id": "rincon-didactico",
+    "folio": "02",
+    "featured": true,
+    "layoutVariant": "spread-visual-left",
+    "visibility": "public",
+    "category": "web-tools",
+    "languages": ["Rust", "JavaScript"],
+    "year": "2026",
+    "githubUrl": "https://github.com/kr-yptonita/Palabrea--Plantilla-y-tarjetas",
+    "image": null,
+    "imageOrientation": "landscape",
+    "plateId": "rincon-didactico",
+    "es": {
+      "title": "Rincón Didáctico",
+      "kicker": "Open Source · Rust 2021 (Cero Dependencias)",
+      "tagline": "Plataforma open source de automatización para generar materiales didácticos listos para imprimir en PDF (tarjetas léxicas, nubes de palabras y fichas aritméticas) con servidor web integrado.",
+      "caption": "FIG. 02 — Arquitectura zero-dependencies en Rust 2021: motores geométricos de tarjetas, nubes sin solapamiento y síntesis PDF A4/Letter.",
+      "overview": "Suite de generación dinámica de materiales educativos (anteriormente bajo el nombre de trabajo Palabrea, en transición a Rincón Didáctico) escrita íntegramente en Rust edición 2021 usando únicamente la biblioteca estándar.",
+      "architecture": "Define binarios CLI/interactivos (`operaciones`, `palabrea`, `lectura`) y un servidor HTTP nativo (`server.rs`) con estudio web estático (`web/`). Incluye generador de números pseudoaleatorios reproducible por semilla, algoritmo de colocación de nubes de palabras sin solapamiento y motores PDF nativos desde cero para hojas A4 y Letter con hoja de respuestas.",
+      "highlights": [
+        "Cargo.toml sin dependencias externas ([dependencies] vacío), 100% biblioteca estándar de Rust.",
+        "Generación reproducible por semilla de tarjetas 3×2, sopas/nubes léxicas y operaciones aritméticas (notación tradicional y galera).",
+        "Suite de pruebas unitarias integradas ejecutables con cargo test para generación, layout, PDF y rutas HTTP."
+      ],
+      "stack": ["Rust 2021 (std)", "PDF Synthesis", "HTTP Server", "HTML / CSS / JS", "CLI"]
+    },
+    "en": {
+      "title": "Rincón Didáctico",
+      "kicker": "Open Source · Rust 2021 (Zero Dependencies)",
+      "tagline": "Open-source automation suite generating print-ready educational PDFs (lexical game cards, non-overlapping wordclouds, and arithmetic worksheets) with an embedded web studio.",
+      "caption": "FIG. 02 — Zero-dependency Rust 2021 architecture: card layout engines, overlap-free wordclouds, and native A4/Letter PDF synthesis.",
+      "overview": "Dynamic educational material generator suite (formerly titled Palabrea, transitioning to Rincón Didáctico) written entirely in Rust 2021 relying exclusively on the standard library.",
+      "architecture": "Provides CLI/interactive binaries (`operaciones`, `palabrea`, `lectura`) alongside a native HTTP server (`server.rs`) serving an interactive web studio (`web/`). Features seed-reproducible PRNG, non-overlapping wordcloud placement, and from-scratch PDF generators for A4 and Letter sheets with answer keys.",
+      "highlights": [
+        "Empty [dependencies] in Cargo.toml — pure Rust standard library.",
+        "Seed-reproducible 3×2 lexical cards, wordclouds, and arithmetic sheets (both traditional and galera division notation).",
+        "Built-in cargo test unit suite validating generation, PDF output, and server routes."
+      ],
+      "stack": ["Rust 2021 (std)", "PDF Synthesis", "HTTP Server", "HTML / CSS / JS", "CLI"]
+    }
+  },
+  {
+    "id": "flujo-ramificado",
+    "folio": "03",
+    "featured": true,
+    "layoutVariant": "spread-wide-visual",
+    "visibility": "public",
+    "category": "research-data",
+    "languages": ["Python", "LaTeX"],
+    "year": "2026",
+    "githubUrl": "https://github.com/kr-yptonita/Flujo-Ramificado",
+    "image": "assets/img/flujo-trayectoria.webp",
+    "imageOrientation": "landscape",
+    "plateId": null,
+    "es": {
+      "title": "Flujo Ramificado",
+      "kicker": "Simulación Física & Investigación · GitHub Público",
+      "tagline": "Simulaciones estocásticas y deterministas multihilo de propagación en medios débilmente dispersivos: trazado de fotones en película de jabón y extensión a ondas sísmicas.",
+      "caption": "FIG. 03 — Trayectoria óptima de fotón trazada sobre matriz de espesor (nm) generada por interferencia de película delgada.",
+      "overview": "Proyecto de investigación matemática y computacional que modela el fenómeno de flujos ramificados (Branched Flows), documentando tanto simulaciones probabilísticas en Python como el marco teórico completo en un informe modular en LaTeX y TikZ.",
+      "architecture": "El módulo `Modelo/Burbuja/` construye matrices de espesor por procesamiento de imágenes ópticas y ejecuta trazadores deterministas y estocásticos con soporte multihilo; `Modelo/Sismo/` adapta la formulación física para estudiar la propagación de ondas sísmicas en el Océano Pacífico.",
+      "highlights": [
+        "Generación de matrices de espesor a partir de interferencia de película delgada.",
+        "Algoritmo de trazado probabilístico de partículas con ejecución multihilo en Python.",
+        "Reporte de investigación en 5 capítulos en LaTeX con diagramas TikZ y bibliografía."
+      ],
+      "stack": ["Python", "Simulación Estocástica", "Multithreading", "Procesamiento de Imágenes", "LaTeX / TikZ"]
+    },
+    "en": {
+      "title": "Branched Flow Model",
+      "kicker": "Physical Simulation & Research · Public GitHub",
+      "tagline": "Multi-threaded stochastic and deterministic simulations of wave propagation in weakly scattering media: photon tracing in soap films and seismic wave extension.",
+      "caption": "FIG. 03 — Optimal photon trajectory traced across a soap-film thickness matrix (nm) derived from thin-film interference.",
+      "overview": "Mathematical and computational research repository modeling Branched Flows, spanning stochastic particle simulations in Python and a full modular research report typeset in LaTeX and TikZ.",
+      "architecture": "`Modelo/Burbuja/` derives thickness matrices from optical image processing and runs deterministic and multi-threaded stochastic ray-tracing; `Modelo/Sismo/` adapts the model to study seismic wave propagation across the Pacific Ocean.",
+      "highlights": [
+        "Thin-film interference thickness matrix extraction pipeline.",
+        "Multi-threaded stochastic and deterministic photon tracing in Python.",
+        "5-chapter LaTeX research manuscript with TikZ diagrams and BibTeX bibliography."
+      ],
+      "stack": ["Python", "Stochastic Simulation", "Multithreading", "Image Processing", "LaTeX / TikZ"]
+    }
+  },
+  {
+    "id": "transcript-traductor",
+    "folio": "04",
+    "featured": true,
+    "layoutVariant": "spread-staggered",
+    "visibility": "private",
+    "category": "ai-signal",
+    "languages": ["Python", "Docker", "PyTorch"],
+    "year": "2026",
+    "githubUrl": null,
+    "image": "assets/img/transcript-arquitectura.webp",
+    "imageOrientation": "square",
+    "plateId": null,
+    "es": {
+      "title": "Transcript-Traductor",
+      "kicker": "Pipeline IA en Tiempo Real · Ficha Técnica",
+      "tagline": "Sistema bidireccional de ultrabaja latencia (0–450 ms) para interceptar audio de videollamadas, transcribir en streaming, traducir con LLM local y clonar voz con subtítulos flotantes.",
+      "caption": "FIG. 04 — Arquitectura del pipeline en 4 etapas (Escuchar, Entender, Traducir, Hablar) sobre PipeWire, Ollama ROCm y WebSockets.",
+      "overview": "Solución local enfocada en privacidad y latencia mínima para traducción simultánea en videollamadas (Zoom, Discord, Meet, Teams), desplegable con Docker Compose sobre aceleración GPU AMD ROCm.",
+      "architecture": "Etapa 1 (0–10 ms): captura PipeWire/PulseAudio/WASAPI + Silero VAD en ventanas de 32 ms (512 muestras a 16 kHz). Etapa 2 (10–80 ms): faster-whisper con estabilización LocalAgreement-2. Etapa 3 (80–250 ms): Llama-3 local vía Ollama/llama.cpp con segmentación por cláusulas en SSE. Etapa 4 (250–450 ms): OpenVoice v2 + MeloTTS hacia micrófono virtual, más servidor FastAPI/WebSockets y overlay nativo transparente en PyQt6.",
+      "highlights": [
+        "Latencia total diseñada entre 0 y 450 ms con estabilización LocalAgreement-2 y corte por cláusulas.",
+        "Aceleración local en GPU AMD ROCm sin depender de APIs externas de nube.",
+        "Triple interfaz de salida: Overlay nativo PyQt6 Always-On-Top, dashboard web y capa OBS/PiP."
+      ],
+      "stack": ["Python", "PipeWire / PulseAudio", "Silero VAD", "faster-whisper", "Llama-3 (Ollama ROCm)", "OpenVoice v2", "FastAPI", "PyQt6", "Docker"]
+    },
+    "en": {
+      "title": "Transcript-Traductor",
+      "kicker": "Real-Time AI Pipeline · Technical Sheet",
+      "tagline": "Ultra-low-latency (0–450 ms) bidirectional call translator capturing live audio, streaming transcription, translating via local LLM, and cloning voice with floating subtitles.",
+      "caption": "FIG. 04 — Four-stage pipeline architecture (Listen, Understand, Translate, Speak) across PipeWire, Ollama ROCm, and WebSockets.",
+      "overview": "Local-first real-time speech translation pipeline for video calls (Zoom, Discord, Meet, Teams), containerized with Docker Compose and AMD ROCm GPU acceleration.",
+      "architecture": "Stage 1 (0–10 ms): PipeWire/PulseAudio/WASAPI capture + 32 ms Silero VAD (512 samples @ 16 kHz). Stage 2 (10–80 ms): faster-whisper with LocalAgreement-2 prefix stabilization. Stage 3 (80–250 ms): local Llama-3 via Ollama with clause-level SSE streaming. Stage 4 (250–450 ms): OpenVoice v2 + MeloTTS outputting to a virtual mic, paired with FastAPI WebSockets and a PyQt6 transparent overlay.",
+      "highlights": [
+        "0–450 ms end-to-end streaming architecture with LocalAgreement-2 and clause chunking.",
+        "Fully local execution on AMD ROCm GPU without external cloud speech APIs.",
+        "Triple output interface: native PyQt6 Always-On-Top overlay, web control dashboard, and OBS/PiP view."
+      ],
+      "stack": ["Python", "PipeWire / PulseAudio", "Silero VAD", "faster-whisper", "Llama-3 (Ollama ROCm)", "OpenVoice v2", "FastAPI", "PyQt6", "Docker"]
+    }
+  },
+  {
+    "id": "metodologia-cuestionarios",
+    "folio": "05",
+    "featured": false,
+    "layoutVariant": "archive-wide",
+    "visibility": "methodology",
+    "category": "research-data",
+    "languages": ["JavaScript", "Python", "Docker"],
+    "year": "2026",
+    "githubUrl": null,
+    "image": null,
+    "imageOrientation": "landscape",
+    "plateId": "metodologia-cuestionarios",
+    "es": {
+      "title": "Metodología de Generación de Cuestionarios Perceptuales",
+      "kicker": "Metodología Experimental · Ficha Técnica",
+      "tagline": "Diseño de instrumentos adaptativos a ciegas con corte inmediato (Sudden Death), motor MIDI binario en navegador y renderizado SVG de partituras en tres claves para estratificar formación musical.",
+      "caption": "FIG. 05 — Flujo adaptativo a ciegas en 4 niveles (P1–P9) con filtro instrumental y transición a evaluación perceptual.",
+      "overview": "Metodología experimental desarrollada para evitar sesgos de autoevaluación en estudios psicoacústicos y de percepción musical: antes de calificar estímulos sonoros aleatorizados, el instrumento determina objetivamente el nivel técnico del participante sin revelar su progreso total.",
+      "architecture": "Consta de dos fases desacopladas: (1) Fase de colocación adaptativa a ciegas con corte al primer error (P1–P2 identificación auditiva, filtro de instrumento que asigna clave de Sol en 2ª, Fa en 4ª o Do en 3ª, P3–P7 lectura, pentagrama interactivo SVG, acordes y copia rítmica sobre MIDI sintetizado con Web Audio API, y P8–P9 modulación y contrapunto); (2) Evaluación perceptual aleatorizada de estímulos con exportación estructurada a CSV/JSON y panel administrador reproducible en Docker.",
+      "highlights": [
+        "Lector binario Standard MIDI File (SMF) y transpositor/sintetizador Web Audio API en el navegador.",
+        "Renderizado dinámico de partituras SVG interactivas sin pistas visuales para evaluación a ciegas.",
+        "Estratificación objetiva por nivel y pregunta exacta alcanzada previa al primer fallo."
+      ],
+      "stack": ["Metodología Psicoacústica", "Web Audio API", "Binary MIDI Parser", "SVG Dinámico", "Python HTTP (Range 206)", "Docker"]
+    },
+    "en": {
+      "title": "Perceptual Questionnaire Generation Methodology",
+      "kicker": "Experimental Methodology · Technical Sheet",
+      "tagline": "Blind adaptive placement design with sudden-death cutoff, in-browser binary MIDI engine, and tri-clef SVG score rendering to objectively stratify musical training.",
+      "caption": "FIG. 05 — Blind adaptive placement workflow (P1–P9) with instrument clef routing and randomized perceptual evaluation.",
+      "overview": "Experimental methodology engineered to eliminate self-reporting bias in psychoacoustic studies: prior to rating randomized audio stimuli, an adaptive test objectively quantifies each participant's musical literacy without exposing total question count.",
+      "architecture": "Two-phase framework: (1) Blind sudden-death placement (P1–P2 timbre/genre listening, instrument filter routing to Treble, Bass, or Alto clef, P3–P7 interactive SVG staff notation, chord dictation, and rhythmic matching via a custom binary MIDI synthesizer, and P8–P9 harmonic modulation and counterpoint); (2) Randomized stimulus rating exported to structured CSV/JSON via a Dockerized backend.",
+      "highlights": [
+        "In-browser Standard MIDI File (SMF) binary parser and Web Audio API synthesizer.",
+        "Dynamic interactive SVG staff renderer supporting Treble, Bass, and Alto clefs.",
+        "Objective participant stratification recording both tier and exact drop-off item."
+      ],
+      "stack": ["Psychoacoustic Methodology", "Web Audio API", "Binary MIDI Parser", "Dynamic SVG", "Python HTTP (Range 206)", "Docker"]
+    }
+  },
+  {
+    "id": "braille-cnn-api",
+    "folio": "06",
+    "featured": false,
+    "layoutVariant": "archive-wide",
+    "visibility": "public",
+    "category": "ai-signal",
+    "languages": ["Python", "Docker"],
+    "year": "2026",
+    "githubUrl": "https://github.com/kr-yptonita/Braille_CNN-api",
+    "image": "assets/img/braille-acc.webp",
+    "imageOrientation": "landscape",
+    "plateId": null,
+    "es": {
+      "title": "Braille CNN API",
+      "kicker": "Visión Computacional · GitHub Público",
+      "tagline": "API FastAPI y red neuronal convolucional separable entrenada con 53,968 imágenes para reconocimiento de caracteres Braille en los 26 grafemas base.",
+      "caption": "FIG. 06 — Evolución de precisión en entrenamiento y validación del modelo BrailleNet (.keras).",
+      "overview": "Servicio de inferencia de aprendizaje profundo para traducir imágenes de caracteres Braille a texto alfabético, integrando entrenamiento con aumento de datos y despliegue en contenedor.",
+      "architecture": "Combina datasets de Kaggle y Angelina-TS (53,968 muestras RGB de 28×28 px con ImageDataGenerator) sobre capas convolucionales separables, pooling y GlobalMaxPooling en Keras/TensorFlow, servidas mediante endpoint FastAPI (`main.py`) con scripts para pruebas en GPU AMD y Dockerfile.",
+      "highlights": [
+        "Dataset unificado de 53,968 imágenes de entrenamiento para las 26 letras del alfabeto.",
+        "Arquitectura CNN ligera con capas separables empaquetada como BrailleNet.keras.",
+        "API REST en FastAPI + Uvicorn y configuración para GPU AMD / Docker."
+      ],
+      "stack": ["Python", "TensorFlow / Keras", "FastAPI", "OpenCV", "Docker", "AMD GPU"]
+    },
+    "en": {
+      "title": "Braille CNN API",
+      "kicker": "Computer Vision · Public GitHub",
+      "tagline": "FastAPI inference service and separable Convolutional Neural Network trained on 53,968 images across 26 Braille character classes.",
+      "caption": "FIG. 06 — Training and validation accuracy curve for the BrailleNet (.keras) classifier.",
+      "overview": "Deep learning inference API classifying digital Braille dot patterns into alphabetic characters, bundling data augmentation training scripts and containerized serving.",
+      "architecture": "Merges Kaggle and Angelina-TS datasets (53,968 28×28 RGB samples augmented via ImageDataGenerator) into a Keras separable-CNN + GlobalMaxPooling classifier served by FastAPI (`main.py`) with Dockerfile and AMD GPU testing scripts.",
+      "highlights": [
+        "Unified 53,968-image training corpus covering 26 alphabetic classes.",
+        "Compact separable-convolution CNN saved as BrailleNet.keras.",
+        "FastAPI + Uvicorn REST API with Docker and AMD GPU test scripts."
+      ],
+      "stack": ["Python", "TensorFlow / Keras", "FastAPI", "OpenCV", "Docker", "AMD GPU"]
+    }
+  },
+  {
+    "id": "demografia-chiapas",
+    "folio": "07",
+    "featured": false,
+    "layoutVariant": "archive-wide",
+    "visibility": "academic",
+    "category": "research-data",
+    "languages": ["R", "LaTeX"],
+    "year": "2025",
+    "githubUrl": null,
+    "image": "assets/img/demografia-piramide.webp",
+    "imageOrientation": "landscape",
+    "plateId": null,
+    "es": {
+      "title": "Demografía: Mortalidad en Chiapas",
+      "kicker": "Análisis Demográfico en R · Archivo Académico",
+      "tagline": "Estudio demográfico (2010–2020) sobre el impacto de diabetes y enfermedades cardiovasculares en la esperanza de vida según estrato rural/urbano y escolaridad.",
+      "caption": "FIG. 07 — Comparativa de pirámide poblacional de Chiapas entre los censos 2010 y 2020 generada en R.",
+      "overview": "Proyecto de análisis cuantitativo en R sobre registros censales y de defunciones (2010–2020) que evalúa calidad de datos, desigualdad en edad de fallecimiento y ganancia potencial en esperanza de vida.",
+      "architecture": "Pipeline modular de 7 scripts en R: limpieza y estandarización (`tratamiento_de_datos.r`), evaluación censal mediante Índice de Naciones Unidas (`calidad_datos.r`), tablas de vida completas y decremento múltiple (`tablas_vida_decremento.r`), tasas estandarizadas, coeficiente de Gini, validación del modelo de Gompertz y diagramas de Lexis.",
+      "highlights": [
+        "Tablas de vida y análisis de decremento múltiple para estimar ganancias en e0 y e45.",
+        "Validación de la ley de mortalidad de Gompertz y cálculo del Índice de Naciones Unidas.",
+        "Cartel científico y gráficas comparativas de alta resolución generadas íntegramente en R."
+      ],
+      "stack": ["R", "Tablas de Vida", "Decremento Múltiple", "Modelo de Gompertz", "Índice ONU", "Cartel Científico"]
+    },
+    "en": {
+      "title": "Demography: Mortality in Chiapas",
+      "kicker": "Demographic Analysis in R · Academic Archive",
+      "tagline": "2010–2020 demographic study assessing the impact of diabetes and cardiovascular disease on life expectancy across rural/urban strata and education levels.",
+      "caption": "FIG. 07 — Comparative population pyramid of Chiapas between 2010 and 2020 censuses rendered in R.",
+      "overview": "Quantitative R research project analyzing census and mortality records (2010–2020) to assess data quality, age-at-death inequality, and potential life expectancy gains.",
+      "architecture": "7-script modular R pipeline covering data cleaning (`tratamiento_de_datos.r`), UN Secretariat Index evaluation (`calidad_datos.r`), multiple-decrement life tables (`tablas_vida_decremento.r`), age-standardized rates, Gini coefficient, Gompertz log-rate validation, and Lexis diagrams.",
+      "highlights": [
+        "Complete life tables and multiple-decrement modeling for e0 and e45 gains.",
+        "Gompertz mortality validation and UN Secretariat Index quality checks.",
+        "Publication-ready demographic charts and scientific poster generated from R scripts."
+      ],
+      "stack": ["R", "Life Tables", "Multiple Decrement", "Gompertz Model", "UN Index", "Scientific Poster"]
+    }
+  },
+  {
+    "id": "analisis-matematico-aplicado",
+    "folio": "08",
+    "featured": false,
+    "layoutVariant": "archive-standard",
+    "visibility": "public",
+    "category": "research-data",
+    "languages": ["Python", "LaTeX"],
+    "year": "2026",
+    "githubUrl": "https://github.com/kr-yptonita/Analisis-Matem-tico-Aplicado",
+    "image": "assets/img/ama-escalograma.webp",
+    "imageOrientation": "landscape",
+    "plateId": null,
+    "es": {
+      "title": "Análisis Matemático Aplicado",
+      "kicker": "Métodos Numéricos y Señales · GitHub Público",
+      "tagline": "Implementaciones computacionales de optimización inversa (Levenberg-Marquardt y Adam), transformadas Wavelet (DWT/CWT) y análisis espectral FFT con reportes en LaTeX.",
+      "caption": "FIG. 08 — Escalograma CWT con Wavelet de Morlet compleja para análisis tiempo-frecuencia de señales.",
+      "overview": "Colección de prácticas y proyecto final de Análisis Matemático Aplicado dedicados al modelado directo/inverso de sensores físicos, limpieza multiescala de ruido y análisis tiempo-frecuencia.",
+      "architecture": "Scripts en Python (`simulador.py`, `procesamiento_dwt.py`, `inversion_lm_adam.py`, `analisis_senales.py`) respaldados por reportes modulares compilados en LaTeX con figuras generadas reproduciblemente.",
+      "highlights": [
+        "Adquisición multiescala y denoising de señales de sensores mediante Transformada Wavelet Discreta (DWT).",
+        "Comparación de optimizadores inversos Levenberg-Marquardt y Adam sobre modelos físicos.",
+        "Escalogramas CWT (Morlet compleja) y espectros FFT documentados en LaTeX."
+      ],
+      "stack": ["Python", "NumPy / SciPy", "Wavelets (DWT/CWT)", "FFT", "Levenberg-Marquardt & Adam", "LaTeX"]
+    },
+    "en": {
+      "title": "Applied Mathematical Analysis",
+      "kicker": "Numerical Methods & Signals · Public GitHub",
+      "tagline": "Computational implementations of inverse optimization (Levenberg-Marquardt & Adam), Wavelet transforms (DWT/CWT), and FFT spectral analysis with LaTeX reports.",
+      "caption": "FIG. 08 — Complex Morlet CWT scalogram for time-frequency signal analysis.",
+      "overview": "Coursework and final project repository in Applied Mathematical Analysis focused on forward/inverse physical sensor modeling, multiscale denoising, and time-frequency decomposition.",
+      "architecture": "Modular Python scripts (`simulador.py`, `procesamiento_dwt.py`, `inversion_lm_adam.py`, `analisis_senales.py`) paired with LaTeX technical manuscripts and reproducible plots.",
+      "highlights": [
+        "Multiscale sensor signal acquisition and denoising via Discrete Wavelet Transform (DWT).",
+        "Inverse parameter estimation comparing Levenberg-Marquardt and Adam optimizers.",
+        "Complex Morlet CWT scalograms and FFT spectra documented in LaTeX."
+      ],
+      "stack": ["Python", "NumPy / SciPy", "Wavelets (DWT/CWT)", "FFT", "Levenberg-Marquardt & Adam", "LaTeX"]
+    }
+  },
+  {
+    "id": "taller-busquedas-sistematizadas",
+    "folio": "09",
+    "featured": false,
+    "layoutVariant": "archive-standard",
+    "visibility": "public",
+    "category": "research-data",
+    "languages": ["Python", "LaTeX"],
+    "year": "2026",
+    "githubUrl": "https://github.com/kr-yptonita/Taller_de_Busquedas_Sistematizadas",
+    "image": "assets/img/taller-venn.webp",
+    "imageOrientation": "square",
+    "plateId": null,
+    "es": {
+      "title": "Taller de Búsquedas Sistematizadas",
+      "kicker": "Bibliometría & APIs Científicas · GitHub Público",
+      "tagline": "Automatización de consultas bibliográficas en PubMed y OpenAlex, consolidación RIS/CSV con WoS y Scopus, mapas bibliométricos y reporte técnico en LaTeX.",
+      "caption": "FIG. 09 — Intersección lógica de cuatro dominios conceptuales (Valle Inquietante, Acústica/DSP, Métricas y Percepción).",
+      "overview": "Flujo sistematizado de revisión de literatura científica en español e inglés sobre el fenómeno de Valle Inquietante en acústica y procesamiento digital de señales.",
+      "architecture": "Módulo `src/Search/` con scripts Python (`query_pubmed.py`, `query_openalex.py`, `fetch_openalex_ris.py`, `universal_search.py`) que normalizan y exportan registros `.ris`, combinado con clústeres de densidad/tiempo de WoS/Scopus y reporte modular en LaTeX.",
+      "highlights": [
+        "Clientes Python para consulta automatizada de APIs de PubMed y OpenAlex con exportación RIS.",
+        "Estrategia booleana de 4 dominios cruzados evaluada en PubMed, Scopus, Web of Science y OpenAlex.",
+        "Mapas de densidad, clústeres temporales y manuscrito técnico en LaTeX."
+      ],
+      "stack": ["Python", "OpenAlex API", "PubMed API", "RIS / Bibliometría", "LaTeX"]
+    },
+    "en": {
+      "title": "Systematic Literature Search Workshop",
+      "kicker": "Bibliometrics & Scientific APIs · Public GitHub",
+      "tagline": "Automated bibliographic querying against PubMed and OpenAlex APIs, RIS/CSV merging with WoS and Scopus exports, bibliometric maps, and LaTeX report.",
+      "caption": "FIG. 09 — Four-domain Boolean intersection (Uncanny Valley, Acoustics/DSP, Metrics, and Perception).",
+      "overview": "Systematic bilingual literature-search workflow investigating the Uncanny Valley phenomenon in acoustics and digital signal processing.",
+      "architecture": "Python tooling (`query_pubmed.py`, `query_openalex.py`, `fetch_openalex_ris.py`, `universal_search.py`) automating structured `.ris` extraction, paired with WoS/Scopus cluster/density visualizations and a modular LaTeX report.",
+      "highlights": [
+        "Python search clients querying PubMed and OpenAlex APIs into unified RIS datasets.",
+        "4-domain Boolean query strategy executed across PubMed, Scopus, Web of Science, and OpenAlex.",
+        "Density/cluster bibliometric visualizations and full LaTeX technical documentation."
+      ],
+      "stack": ["Python", "OpenAlex API", "PubMed API", "RIS / Bibliometrics", "LaTeX"]
+    }
+  },
+  {
+    "id": "gachaaddiction-fabric",
+    "folio": "10",
+    "featured": false,
+    "layoutVariant": "archive-standard",
+    "visibility": "public",
+    "category": "web-tools",
+    "languages": ["Java"],
+    "year": "2026",
+    "githubUrl": "https://github.com/kr-yptonita/GachaAddiction-Fabric",
+    "image": null,
+    "imageOrientation": "landscape",
+    "plateId": "java-fabric",
+    "es": {
+      "title": "GachaAddiction — Fabric 26.2",
+      "kicker": "Modding en Java 25 · GitHub Público",
+      "tagline": "Port a Fabric Loader / Fabric API (Minecraft 26.2, Java 25) de mod visual con carrusel animado estilo gacha para revelar botín de cofres y tablas personalizadas.",
+      "caption": "FIG. 10 — Port a Fabric 0.19.3+ / Java 25 con compatibilidad para tablas de botín vanilla, datapacks y Lootr.",
+      "overview": "Implementación en Java 25 sobre Fabric que reemplaza la interfaz estándar de cofres de botín por una animación de ruleta con ítems señuelo, resaltado de rareza y atajos rápidos (ESPACIO / ESC).",
+      "architecture": "Proyecto Gradle construido sobre Fabric Loader 0.19.3+ y Fabric API 0.156.0+ para Minecraft 26.2, respetando las tablas de botín nativas, paquetes de datos y soporte opcional para contenedores Lootr.",
+      "highlights": [
+        "Migración y compilación funcional para Minecraft 26.2 sobre Java 25 y Fabric API.",
+        "Compatibilidad con todas las loot tables vanilla, datapacks y Lootr.",
+        "Indicadores de color por rareza y controles de salto rápido de animación."
+      ],
+      "stack": ["Java 25", "Fabric Loader", "Fabric API", "Gradle", "Minecraft Modding"]
+    },
+    "en": {
+      "title": "GachaAddiction — Fabric 26.2",
+      "kicker": "Java 25 Modding · Public GitHub",
+      "tagline": "Fabric Loader / Fabric API port (Minecraft 26.2, Java 25) of an animated gacha reel interface for revealing chest loot tables and datapack rewards.",
+      "caption": "FIG. 10 — Fabric 0.19.3+ / Java 25 port supporting vanilla loot tables, datapacks, and Lootr.",
+      "overview": "Java 25 Fabric mod replacing the standard loot container screen with an animated slot-machine reel interface featuring decoy items, rarity borders, and SPACE/ESC skip controls.",
+      "architecture": "Gradle project targeting Minecraft 26.2, Fabric Loader 0.19.3+, and Fabric API 0.156.0+, preserving compatibility with vanilla loot tables, datapacks, and optional Lootr chests.",
+      "highlights": [
+        "Ported and built for Minecraft 26.2 on Java 25 and Fabric API.",
+        "Works seamlessly across vanilla loot tables, custom datapacks, and Lootr.",
+        "Rarity-colored selection frames and instant animation skip shortcuts."
+      ],
+      "stack": ["Java 25", "Fabric Loader", "Fabric API", "Gradle", "Minecraft Modding"]
+    }
+  },
+  {
+    "id": "rewards-search-extension",
+    "folio": "11",
+    "featured": false,
+    "layoutVariant": "archive-standard",
+    "visibility": "public",
+    "category": "web-tools",
+    "languages": ["JavaScript"],
+    "year": "2026",
+    "githubUrl": "https://github.com/kr-yptonita/Rewards-Search-With-Genuine-Search",
+    "image": null,
+    "imageOrientation": "landscape",
+    "plateId": "rewards-extension",
+    "es": {
+      "title": "Rewards Search With Genuine Search",
+      "kicker": "Extensión Firefox MV3 · GitHub Público",
+      "tagline": "Extensión WebExtensions (Manifest V3) para Firefox que replica automáticamente en segundo plano las búsquedas de Google, DuckDuckGo y Brave Search en Bing.",
+      "caption": "FIG. 11 — Ciclo de vida MV3: detección de query, deduplicación en storage.session y cierre por alarma.",
+      "overview": "Extensión de navegador escrita en JavaScript sobre Manifest V3 que sincroniza búsquedas genuinas entre motores y gestiona pestañas temporales sin fugas de memoria.",
+      "architecture": "Escucha eventos `tabs.onUpdated` sobre Google, DuckDuckGo y Brave Search, extrae el parámetro `q`, aplica ventana de deduplicación con limpieza periódica en `chrome.storage.session`, abre la consulta en segundo plano y programa su cierre automático a los 10 s mediante `alarms`.",
+      "highlights": [
+        "Soporte multi-buscador (Google, DuckDuckGo y Brave Search) bajo Manifest V3.",
+        "Deduplicación temporal y limpieza de claves en storage.session para evitar fugas de memoria.",
+        "Configuración específica para Firefox Gecko (>= 142.0)."
+      ],
+      "stack": ["JavaScript", "WebExtensions MV3", "Firefox Gecko", "Tabs & Alarms API"]
+    },
+    "en": {
+      "title": "Rewards Search With Genuine Search",
+      "kicker": "Firefox MV3 Extension · Public GitHub",
+      "tagline": "Firefox WebExtension (Manifest V3) that mirrors genuine queries from Google, DuckDuckGo, and Brave Search onto Bing in a self-closing background tab.",
+      "caption": "FIG. 11 — MV3 lifecycle: query capture, storage.session deduplication, and alarm-based cleanup.",
+      "overview": "Browser extension written in JavaScript (Manifest V3) that mirrors natural user searches across engines while managing ephemeral tabs without memory leaks.",
+      "architecture": "Subscribes to `tabs.onUpdated` across Google, DuckDuckGo, and Brave Search, parses `q`, deduplicates entries in `chrome.storage.session` with automatic expiration cleanup, opens a background Bing tab, and closes it after 10 s via `alarms`.",
+      "highlights": [
+        "Multi-engine detection (Google, DuckDuckGo, Brave Search) under Manifest V3.",
+        "Session storage pruning to prevent memory leaks on long browsing sessions.",
+        "Firefox Gecko manifest configuration (>= 142.0)."
+      ],
+      "stack": ["JavaScript", "WebExtensions MV3", "Firefox Gecko", "Tabs & Alarms API"]
+    }
+  },
+  {
+    "id": "cosmic-cloud-rocky-linux",
+    "folio": "12",
+    "featured": false,
+    "layoutVariant": "archive-compact",
+    "visibility": "public",
+    "category": "systems",
+    "languages": ["Bash"],
+    "year": "2026",
+    "githubUrl": "https://github.com/kr-yptonita/Cosmic-Cloud-Rocky-Linux",
+    "image": null,
+    "imageOrientation": "landscape",
+    "plateId": "linux-infra",
+    "es": {
+      "title": "Cosmic Cloud — Rocky Linux",
+      "kicker": "Infraestructura & Bash · GitHub Público",
+      "tagline": "Instalador, resolución de dependencias (avahi, SnapRAID, Docker) y configuración de firewall para desplegar Cosmic Cloud en Rocky Linux y derivados RHEL.",
+      "caption": "FIG. 12 — Provisionamiento modular en Rocky Linux: requerimientos, instalador, firewall y desinstalación.",
+      "overview": "Conjunto de scripts Bash diseñados para portar y corregir dependencias del instalador original de Cosmic Cloud sobre sistemas Enterprise Linux (Rocky Linux / RHEL).",
+      "architecture": "Divide el ciclo de vida en cuatro scripts especializados: `installer_requirements.sh` (Git, Curl, Wget, Docker, SnapRAID y ajuste de servicio `avahi`), `Installer.sh`, `Firewall.sh` y `Uninstall.sh`.",
+      "highlights": [
+        "Corrección de nombres de paquetes y servicios en RHEL/Rocky Linux (avahi vs avahi-daemon).",
+        "Instalación automatizada de Docker y SnapRAID previa al despliegue.",
+        "Scripts dedicados para verificación de firewall y desinstalación limpia."
+      ],
+      "stack": ["Bash", "Rocky Linux / RHEL", "Docker", "SnapRAID", "Firewalld"]
+    },
+    "en": {
+      "title": "Cosmic Cloud — Rocky Linux",
+      "kicker": "Infrastructure & Bash · Public GitHub",
+      "tagline": "Automated installer, dependency fixes (avahi, SnapRAID, Docker), and firewall setup porting Cosmic Cloud to Rocky Linux and RHEL derivatives.",
+      "caption": "FIG. 12 — Modular Rocky Linux provisioning flow across requirements, setup, firewall, and cleanup.",
+      "overview": "Shell automation suite adapting the Cosmic Cloud installer and system prerequisites to Rocky Linux and Red Hat Enterprise Linux environments.",
+      "architecture": "Separates provisioning into four idempotent scripts: `installer_requirements.sh` (Git, Curl, Wget, Docker, SnapRAID, and `avahi` mapping), `Installer.sh`, `Firewall.sh`, and `Uninstall.sh`.",
+      "highlights": [
+        "Resolves RHEL/Rocky package mismatches such as avahi vs avahi-daemon.",
+        "Automates Docker and SnapRAID prerequisites prior to installation.",
+        "Includes dedicated firewall configuration and clean uninstallation scripts."
+      ],
+      "stack": ["Bash", "Rocky Linux / RHEL", "Docker", "SnapRAID", "Firewalld"]
+    }
+  },
+  {
+    "id": "omeka-docker-rocky-linux",
+    "folio": "13",
+    "featured": false,
+    "layoutVariant": "archive-compact",
+    "visibility": "public",
+    "category": "systems",
+    "languages": ["Docker", "Bash"],
+    "year": "2026",
+    "githubUrl": "https://github.com/kr-yptonita/omeka-docker-rocky-linux",
+    "image": null,
+    "imageOrientation": "landscape",
+    "plateId": "docker-omeka",
+    "es": {
+      "title": "Omeka Docker — Rocky Linux",
+      "kicker": "Contenedores & Compose · GitHub Público",
+      "tagline": "Orquestación con Docker Compose de Omeka S y MariaDB 10.11 sobre Rocky Linux con volúmenes persistentes, permisos y plantilla para Cosmic Cloud.",
+      "caption": "FIG. 13 — Topología Docker Compose: red bridge omeka-net aislando MariaDB 10.11 y Omeka S.",
+      "overview": "Stack reproducible listo para producción inicial de repositorios digitales con Omeka S, pensado para integrarse con Cosmic Cloud en servidores Rocky Linux.",
+      "architecture": "Define `docker-compose.yml` con servicios `db` (`mariadb:10.11`, persistencia en `./mysql`) y `omeka` (`elestio/omeka:latest`, volúmenes `./files` y `./config/database.ini`) comunicados mediante red bridge aislada `omeka-net`, más manifiesto `cosmic-compose.json`.",
+      "highlights": [
+        "Aislamiento de base de datos y aplicación en red interna dedicada omeka-net.",
+        "Persistencia explícita en host para archivos subidos, configuración y base MariaDB.",
+        "Incluye descriptor cosmic-compose.json para integración directa con Cosmic Cloud."
+      ],
+      "stack": ["Docker Compose", "MariaDB 10.11", "Omeka S", "Rocky Linux"]
+    },
+    "en": {
+      "title": "Omeka Docker — Rocky Linux",
+      "kicker": "Containers & Compose · Public GitHub",
+      "tagline": "Reproducible Docker Compose stack deploying Omeka S and MariaDB 10.11 on Rocky Linux with persistent host volumes and Cosmic Cloud integration.",
+      "caption": "FIG. 13 — Docker Compose topology isolating MariaDB 10.11 and Omeka S over omeka-net bridge.",
+      "overview": "Containerized digital-archive stack pairing Omeka S with MariaDB, designed for deployment and orchestration alongside Cosmic Cloud on Rocky Linux.",
+      "architecture": "Configures `docker-compose.yml` with `db` (`mariadb:10.11`, `./mysql` volume) and `omeka` (`elestio/omeka:latest`, `./files` and `./config/database.ini` mounts) linked across an isolated `omeka-net` bridge, plus a `cosmic-compose.json` manifest.",
+      "highlights": [
+        "Dedicated internal bridge network isolating MariaDB from external exposure.",
+        "Host-persisted storage for database state, uploads, and database.ini configuration.",
+        "Provides cosmic-compose.json integration for Rocky Linux servers."
+      ],
+      "stack": ["Docker Compose", "MariaDB 10.11", "Omeka S", "Rocky Linux"]
+    }
+  },
+  {
+    "id": "audio-automation-suite",
+    "folio": "14",
+    "featured": false,
+    "layoutVariant": "archive-compact",
+    "visibility": "local",
+    "category": "web-tools",
+    "languages": ["Python"],
+    "year": "2026",
+    "githubUrl": "https://github.com/kr-yptonita/Add-genre-music-script",
+    "image": null,
+    "imageOrientation": "landscape",
+    "plateId": "audio-suite",
+    "es": {
+      "title": "Suite de Automatización de Audio y Metadatos",
+      "kicker": "Python & DSP / Utilidades · Mixto (GitHub + Local)",
+      "tagline": "Conjunto de herramientas en Python para etiquetado de género vía Spotify API (Add-genre-music-script), transcodificación MP3 320 kbps con normalización de carátulas (Sincronizador / Coverart-Fix) y CLI de síntesis Texto a Voz.",
+      "caption": "FIG. 14 — Pipeline unificado de gestión musical: ingesta multi-formato, ffmpeg 320 kbps, carátulas 500×500 y tagging ID3/Spotify.",
+      "overview": "Ecosistema modular de utilidades en Python orientado a mantener bibliotecas musicales organizadas con metadatos completos y carátulas estandarizadas, más una interfaz CLI/REPL de conversión texto a voz.",
+      "architecture": "Integra `Add-genre-music-script` (GitHub público, Mutagen + Spotipy con manejo de rate-limits y GUI), `Sincronizador` + `Coverart-Fix` (conversión de FLAC/WAV/M4A/Opus a MP3 320 kbps vía ffmpeg en estructura Artista/Álbum y reescalado Lanczos a 500×500 px con Pillow), y `Texto a Voz` (CLI y sesión interactiva REPL con selección de dispositivo de audio).",
+      "highlights": [
+        "Soporte multi-formato de entrada (MP3, FLAC, WAV, M4A, OGG, Opus, ALAC) preservando tags.",
+        "Redimensionado Lanczos de carátulas embebidas a 500×500 px en MP3, FLAC, M4A y WAV.",
+        "Enriquecimiento automático de etiquetas ID3/FLAC consultando Spotify Web API (enlazado en GitHub)."
+      ],
+      "stack": ["Python", "Mutagen", "ffmpeg", "Pillow", "Spotipy", "CLI / Tkinter"]
+    },
+    "en": {
+      "title": "Audio & Metadata Automation Suite",
+      "kicker": "Python & Audio Utilities · Mixed (GitHub + Local)",
+      "tagline": "Python toolkit combining Spotify-assisted genre tagging (Add-genre-music-script), 320 kbps MP3 library transcoding with 500×500 cover normalization (Sincronizador / Coverart-Fix), and a Text-to-Speech CLI.",
+      "caption": "FIG. 14 — Unified audio tooling pipeline: multi-format ingest, ffmpeg 320 kbps, 500×500 cover resize, and Spotify ID3 tagging.",
+      "overview": "Modular collection of Python utilities built to curate lossless/lossy music collections with clean Artist/Album hierarchies, standardized embedded artwork, and interactive TTS synthesis.",
+      "architecture": "Brings together `Add-genre-music-script` (public GitHub, Mutagen + Spotipy with rate-limit backoff), `Sincronizador` + `Coverart-Fix` (ffmpeg 320 kbps transcoding and Pillow Lanczos 500×500 artwork resizing), and `Texto a Voz` (CLI/REPL speech utility).",
+      "highlights": [
+        "Multi-format audio ingest (FLAC, WAV, M4A, OGG, Opus, ALAC) preserving metadata.",
+        "Lanczos resizing of embedded cover art to 500×500 px across MP3, FLAC, M4A, and WAV.",
+        "Automated genre & comment metadata enrichment via Spotify Web API (linked on GitHub)."
+      ],
+      "stack": ["Python", "Mutagen", "ffmpeg", "Pillow", "Spotipy", "CLI / Tkinter"]
+    }
+  },
+  {
+    "id": "java-estructuras-graficas",
+    "folio": "15",
+    "featured": false,
+    "layoutVariant": "archive-compact",
+    "visibility": "public",
+    "category": "research-data",
+    "languages": ["Java", "LaTeX"],
+    "year": "2025",
+    "githubUrl": "https://github.com/kr-yptonita/Practicas-de-Estructuras-de-datos",
+    "image": null,
+    "imageOrientation": "landscape",
+    "plateId": null,
+    "es": {
+      "title": "Estructuras de Datos en Java & Teoría de Gráficas",
+      "kicker": "Fundamentos CS & Matemáticas · GitHub + LaTeX",
+      "tagline": "Implementación de estructuras de datos y algoritmos fundamentales en Java (Practicas-de-Estructuras-de-datos / edd), junto con demostraciones y problemas resueltos de Teoría de Gráficas en LaTeX.",
+      "caption": "FIG. 15 — Archivo académico de algoritmos en Java y formalización matemática en LaTeX.",
+      "overview": "Compendio de prácticas algorítmicas implementadas en Java y notas formales de Teoría de Gráficas escritas modularmente en LaTeX.",
+      "architecture": "Repositorios públicos en Java (`Practicas-de-Estructuras-de-datos` con código fuente `src/` y reporte PDF, complementado por `edd`) junto con cuadernos modulares de ejercicios matemáticos en `Teoría de Gráficas`.",
+      "highlights": [
+        "Implementaciones limpias en Java de estructuras de datos clásicas con documentación técnica.",
+        "Formalización rigurosa de problemas de Teoría de Gráficas en LaTeX modular."
+      ],
+      "stack": ["Java", "Estructuras de Datos", "Algoritmos", "Teoría de Gráficas", "LaTeX"]
+    },
+    "en": {
+      "title": "Java Data Structures & Graph Theory",
+      "kicker": "CS Foundations & Math · GitHub + LaTeX",
+      "tagline": "Core data structures and algorithmic implementations in Java (Practicas-de-Estructuras-de-datos / edd), paired with Graph Theory proofs typeset in LaTeX.",
+      "caption": "FIG. 15 — Academic archive of Java data-structure implementations and LaTeX proofs.",
+      "overview": "Collection of classical data-structure assignments in Java alongside modular Graph Theory problem sets and proofs authored in LaTeX.",
+      "architecture": "Public Java repositories (`Practicas-de-Estructuras-de-datos` including `src/` and PDF report, alongside `edd`) paired with modular LaTeX Graph Theory coursework.",
+      "highlights": [
+        "Clean Java implementations of foundational data structures with technical reports.",
+        "Rigorous Graph Theory proofs and exercises organized in modular LaTeX."
+      ],
+      "stack": ["Java", "Data Structures", "Algorithms", "Graph Theory", "LaTeX"]
+    }
+  }
+]

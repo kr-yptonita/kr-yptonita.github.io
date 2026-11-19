@@ -1,0 +1,265 @@
+{
+  "identity": {
+    "fullName": "Karla Romina Juárez Torres",
+    "handle": "@kr-yptonita",
+    "githubUrl": "https://github.com/kr-yptonita",
+    "emails": [
+      {
+        "id": "institutional",
+        "address": "kr_ipton@ciencias.unam.mx",
+        "label": {
+          "es": "Correo institucional",
+          "en": "Institutional email"
+        }
+      },
+      {
+        "id": "personal",
+        "address": "kr.iptonita117@proton.me",
+        "label": {
+          "es": "Correo personal",
+          "en": "Personal email"
+        }
+      }
+    ]
+  },
+  "languagesCore": [
+    {
+      "name": "Python",
+      "focus": {
+        "es": "Deep Learning (PyTorch, Keras), DSP/Audio (librosa), FastAPI, simulaciones numéricas y procesamiento de señales.",
+        "en": "Deep Learning (PyTorch, Keras), Audio DSP (librosa), FastAPI, numerical simulation, and signal processing."
+      }
+    },
+    {
+      "name": "Java",
+      "focus": {
+        "es": "Estructuras de datos, programación orientada a objetos y desarrollo de mods (Minecraft Fabric API · Java 25).",
+        "en": "Data structures, object-oriented architecture, and mod development (Minecraft Fabric API · Java 25)."
+      }
+    },
+    {
+      "name": "Rust",
+      "focus": {
+        "es": "Sistemas sin dependencias externas (std), generación binaria de PDFs, algoritmos geométricos y servidores HTTP.",
+        "en": "Zero-dependency systems (std), native PDF synthesis, geometric layout algorithms, and embedded HTTP servers."
+      }
+    }
+  ],
+  "secondaryStack": ["R", "LaTeX / TikZ", "Docker", "PyTorch", "FastAPI", "JavaScript", "Bash / Rocky Linux", "SQL"],
+  "experience": [
+    {
+      "id": "imss",
+      "folio": "EXP. 01",
+      "period": {
+        "es": "Experiencia Laboral e Investigación",
+        "en": "Work & Research Experience"
+      },
+      "institution": {
+        "es": "Instituto Mexicano del Seguro Social (IMSS)",
+        "en": "Mexican Social Security Institute (IMSS)"
+      },
+      "role": {
+        "es": "Unidad de Investigación Epidemiológica y en Servicios de Salud — Área de Envejecimiento",
+        "en": "Epidemiological & Health Services Research Unit — Aging Area"
+      },
+      "summary": {
+        "es": "Trabajo en unidad de investigación enfocado en análisis cuantitativo, estudio epidemiológico y soporte computacional aplicado al área de envejecimiento y servicios de salud.",
+        "en": "Research unit work focused on quantitative analysis, epidemiological study, and computational support applied to aging and health services."
+      },
+      "tags": ["Investigación Epidemiológica", "Análisis de Datos", "Área de Envejecimiento"]
+    },
+    {
+      "id": "neuro-multisensorial",
+      "folio": "INV. 02",
+      "period": {
+        "es": "Línea de Investigación Multidisciplinaria",
+        "en": "Multidisciplinary Research Line"
+      },
+      "institution": {
+        "es": "Neurociencia Multisensorial: Música y el Gusto",
+        "en": "Multisensory Neuroscience: Music and Taste"
+      },
+      "role": {
+        "es": "Correspondencias Crossmodales, Psicofísica y Modelado Computacional",
+        "en": "Crossmodal Correspondences, Psychophysics & Computational Modeling"
+      },
+      "summary": {
+        "es": "Investigación y desarrollo de modelos computacionales y pruebas perceptuales que vinculan descriptores acústicos y musicales con los seis sabores elementales mediante redes neuronales y Series de Fourier.",
+        "en": "Research and development of computational models and perceptual instruments linking acoustic and musical descriptors to the six basic tastes via neural networks and Fourier series."
+      },
+      "tags": ["Psicofísica", "Audio DSP", "Series de Fourier", "PyTorch"]
+    }
+  ],
+  "ui": {
+    "es": {
+      "editionTag": "ED. 2026 // ARCHIVO DE INGENIERÍA E INVESTIGACIÓN",
+      "nav": {
+        "about": "Presentación",
+        "experience": "Trayectoria",
+        "featured": "Destacados",
+        "archive": "Archivo",
+        "contact": "Contacto"
+      },
+      "hero": {
+        "kicker": "Matemáticas Aplicadas · IA & Señales · Sistemas",
+        "headlinePart1": "Modelado matemático,",
+        "headlineItalic": "percepción multisensorial",
+        "headlinePart2": "y software científico.",
+        "bio": "Diseño y construyo herramientas en Python, Java y Rust en la intersección entre investigación epidemiológica y multisensorial, procesamiento de señales de audio, visión computacional e infraestructura reproducible.",
+        "ctaFeatured": "Explorar selección editorial",
+        "ctaGithub": "Ver GitHub",
+        "colophonTitle": "Colofón Técnico",
+        "colophonLanguages": "Lenguajes principales",
+        "colophonCountLabel": "Piezas en este catálogo",
+        "colophonFocusLabel": "Ecosistema complementario",
+        "portraitLabel": "RETRATO // @KR-YPTONITA",
+        "portraitAlt": "Foto de perfil ilustrada de Karla Romina Juárez Torres (@kr-yptonita)"
+      },
+      "experienceSection": {
+        "kicker": "01 // Trayectoria e Investigación",
+        "title": "Experiencia en investigación y perfil técnico",
+        "subtitle": "Líneas activas entre investigación en salud pública, neurociencia multisensorial y desarrollo de sistemas.",
+        "languagesTitle": "Dominio de Lenguajes",
+        "languagesLead": "Stack central articulado por Python, Java y Rust según la exigencia matemática, de producto o de bajo nivel."
+      },
+      "featuredSection": {
+        "kicker": "02 // Selección Editorial",
+        "title": "Cuatro piezas insignia",
+        "subtitle": "Proyectos de investigación, sistemas de ultrabaja latencia, simulación física y automatización didáctica.",
+        "readSheet": "Leer ficha técnica",
+        "visitRepo": "Abrir en GitHub",
+        "privateNote": "Repositorio privado · Ficha técnica"
+      },
+      "archiveSection": {
+        "kicker": "03 // Índice Completo",
+        "title": "Archivo técnico y académico",
+        "subtitle": "Catálogo filtrable por disciplina, lenguaje y disponibilidad del código.",
+        "searchPlaceholder": "Buscar por título, librería o tema…",
+        "allCategories": "Todos",
+        "allLanguages": "Cualquier lenguaje",
+        "emptyState": "Ningún proyecto coincide con los filtros actuales. Prueba limpiar la búsqueda.",
+        "resetFilters": "Restablecer filtros",
+        "showing": "Mostrando",
+        "of": "de",
+        "entries": "entradas"
+      },
+      "categories": {
+        "all": "Todos",
+        "ai-signal": "IA y Señales",
+        "research-data": "Investigación y Datos",
+        "systems": "Sistemas y Linux",
+        "web-tools": "Web, Mods y Utilidades"
+      },
+      "visibilityBadges": {
+        "public": "GitHub Público",
+        "private": "Privado · Ficha Técnica",
+        "methodology": "Metodología · Ficha Técnica",
+        "academic": "Investigación Académica",
+        "local": "Utilidad Local / Mixta"
+      },
+      "drawer": {
+        "close": "Cerrar ficha",
+        "overview": "Resumen Ejecutivo",
+        "architecture": "Arquitectura y Decisiones Técnicas",
+        "highlights": "Aspectos Clave",
+        "stack": "Tecnologías",
+        "status": "Estado / Acceso",
+        "openRepo": "Ir al repositorio en GitHub",
+        "privateNotice": "Este proyecto pertenece a un repositorio privado o de uso reservado; aquí se documenta su arquitectura y alcance técnico."
+      },
+      "footer": {
+        "kicker": "04 // Contacto y Colofón",
+        "title": "Conversemos sobre investigación, datos o código.",
+        "subtitle": "Disponible para colaboraciones en investigación aplicada, modelado matemático, audio/IA y desarrollo en Python, Java o Rust.",
+        "copyEmail": "Copiar",
+        "copied": "Copiado",
+        "licenseNote": "Código del portafolio bajo licencia MIT · Catálogo curado desde proyectos propios."
+      }
+    },
+    "en": {
+      "editionTag": "ED. 2026 // ENGINEERING & RESEARCH ARCHIVE",
+      "nav": {
+        "about": "Overview",
+        "experience": "Experience",
+        "featured": "Selected",
+        "archive": "Archive",
+        "contact": "Contact"
+      },
+      "hero": {
+        "kicker": "Applied Mathematics · AI & Signals · Systems",
+        "headlinePart1": "Mathematical modeling,",
+        "headlineItalic": "multisensory perception",
+        "headlinePart2": "and scientific software.",
+        "bio": "I design and build systems in Python, Java, and Rust at the intersection of epidemiological and multisensory research, audio signal processing, computer vision, and reproducible infrastructure.",
+        "ctaFeatured": "Explore curated selection",
+        "ctaGithub": "View GitHub",
+        "colophonTitle": "Technical Colophon",
+        "colophonLanguages": "Core languages",
+        "colophonCountLabel": "Entries in this index",
+        "colophonFocusLabel": "Supporting ecosystem",
+        "portraitLabel": "PORTRAIT // @KR-YPTONITA",
+        "portraitAlt": "Illustrated profile portrait of Karla Romina Juárez Torres (@kr-yptonita)"
+      },
+      "experienceSection": {
+        "kicker": "01 // Trajectory & Research",
+        "title": "Research experience and technical profile",
+        "subtitle": "Active work spanning public health research, multisensory neuroscience, and systems engineering.",
+        "languagesTitle": "Programming Languages",
+        "languagesLead": "Core stack anchored in Python, Java, and Rust depending on mathematical, application, or systems constraints."
+      },
+      "featuredSection": {
+        "kicker": "02 // Editorial Spread",
+        "title": "Four flagship works",
+        "subtitle": "Research systems, ultra-low-latency pipelines, physical simulation, and open-source educational tooling.",
+        "readSheet": "Read technical sheet",
+        "visitRepo": "Open on GitHub",
+        "privateNote": "Private repository · Technical sheet"
+      },
+      "archiveSection": {
+        "kicker": "03 // Complete Index",
+        "title": "Technical & academic archive",
+        "subtitle": "Filterable index across discipline, programming language, and repository availability.",
+        "searchPlaceholder": "Search by title, library, or topic…",
+        "allCategories": "All",
+        "allLanguages": "Any language",
+        "emptyState": "No entries match your active filters. Try resetting the search.",
+        "resetFilters": "Reset filters",
+        "showing": "Showing",
+        "of": "of",
+        "entries": "entries"
+      },
+      "categories": {
+        "all": "All",
+        "ai-signal": "AI & Signals",
+        "research-data": "Research & Data",
+        "systems": "Systems & Linux",
+        "web-tools": "Web, Mods & Tools"
+      },
+      "visibilityBadges": {
+        "public": "Public GitHub",
+        "private": "Private · Technical Sheet",
+        "methodology": "Methodology · Technical Sheet",
+        "academic": "Academic Research",
+        "local": "Local / Mixed Utility"
+      },
+      "drawer": {
+        "close": "Close sheet",
+        "overview": "Executive Summary",
+        "architecture": "Architecture & Technical Decisions",
+        "highlights": "Key Highlights",
+        "stack": "Tech Stack",
+        "status": "Status / Access",
+        "openRepo": "View repository on GitHub",
+        "privateNotice": "This project resides in a private or restricted repository; its technical architecture and scope are documented here as a case sheet."
+      },
+      "footer": {
+        "kicker": "04 // Contact & Colophon",
+        "title": "Let's talk research, data, or code.",
+        "subtitle": "Open to collaborations in applied research, mathematical modeling, audio/AI pipelines, and Python, Java, or Rust engineering.",
+        "copyEmail": "Copy",
+        "copied": "Copied",
+        "licenseNote": "Portfolio source under MIT License · Curated directly from original projects."
+      }
+    }
+  }
+}

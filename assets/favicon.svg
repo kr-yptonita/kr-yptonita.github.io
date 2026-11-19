@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="kr-yptonita monogram">
+  <defs>
+    <linearGradient id="bt" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5BCEFA" />
+      <stop offset="25%" stop-color="#F5A9B8" />
+      <stop offset="50%" stop-color="#FFFFFF" />
+      <stop offset="75%" stop-color="#D60270" />
+      <stop offset="100%" stop-color="#0038A8" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="6" fill="#100E18" />
+  <rect x="4" y="4" width="56" height="3.5" rx="1.5" fill="url(#bt)" />
+  <text x="11" y="44" font-family="Georgia, serif" font-style="italic" font-size="30" font-weight="700" fill="#F7F5FA">kr</text>
+  <circle cx="48" cy="41" r="4.5" fill="#D60270" />
+  <circle cx="48" cy="27" r="2.8" fill="#5BCEFA" />
+</svg>
